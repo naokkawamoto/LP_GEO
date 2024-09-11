@@ -91,9 +91,11 @@ footer {
     font-weight: bold;
 }
 
-/* カードの罫線なし */
 .card {
-    border: none;
+    width: 100%; /* カードの幅を100%に設定 */
+    max-width: 300px; /* 最大幅を設定してカードが広がりすぎないように */
+    margin: 10px; /* カードの間に適度な余白を追加 */
+    border: none; /* 枠線を消す */
 }
 
 /* カードの画像を丸くし、カードの幅にフィットさせる */
@@ -114,19 +116,27 @@ footer {
 
 /* 実績セクション */
 .achievements-img {
-    height: 200px;
-    object-fit: cover;
+    width: 100%; /* カードの横幅にフィット */
+    height: auto; /* 自動調整 */
+    border-radius: 10px; /* 角を丸くする */
+    object-fit: cover; /* 画像をカード内に収める */
 }
 
 .achievements-title {
+    text-align: center; /* テキストを中央揃え */
     font-weight: bold;
     margin-bottom: 10px;
 }
 
 .achievements-text {
+    text-align: center; /* テキストを中央揃え */
     font-size: 1rem;
 }
-
+.row {
+    display: flex;
+    justify-content: center; /* カードを中央揃え */
+    flex-wrap: wrap; /* 小さい画面でも折り返しされるように */
+}
 /* システムの特徴 */
 .section-title {
     font-size: 2.5rem;
