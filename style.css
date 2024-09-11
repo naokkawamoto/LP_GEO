@@ -1,0 +1,541 @@
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+header {
+    background-color: #172a88;
+    color: white;
+    padding: 20px;
+}
+/* ヘッダーメニューのフォントサイズを調整 */
+.nav-link {
+    font-size: 0.875rem; /* 小さい文字に設定 */
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+/* ヘッダーメニューのホバー効果 */
+.nav-link:hover {
+    color: #df0522; /* ホバー時の色 */
+}
+
+.mv_area_wrap {
+    background-color: #f8f9fa;
+    padding: 0px 0;
+    text-align: center;
+    position: relative;
+    background-image: url('https://picsum.photos/1920/1080?random');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+}
+
+/* 半透明のオーバーレイ */
+.mv_area::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.mv_area {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+}
+
+.mv_txt {
+    color: white;
+    position: relative;
+    z-index: 2;
+}
+
+.mv_btn a {
+    background-color: #df0522;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.mv_btn a:hover {
+    background-color: #c90420;
+}
+
+h1 span {
+    color: #df0522;
+}
+
+.mv_txt h2 {
+    font-size: 48px;
+}
+
+footer {
+    background-color: #172a88;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.custom-font {
+    color: black;
+    font-weight: bold;
+}
+
+/* カードの罫線なし */
+.card {
+    border: none;
+}
+
+/* カードの画像を丸くし、カードの幅にフィットさせる */
+.card-img-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* 実績セクション */
+.achievements-img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.achievements-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.achievements-text {
+    font-size: 1rem;
+}
+
+/* システムの特徴 */
+.section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #172a88;
+}
+
+.section-subtitle {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* 特徴リスト */
+.feature-item {
+    display: flex;
+    align-items: flex-start;
+}
+
+.feature-icon {
+    color: #df0522; /* 赤系の色 */
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.feature-text {
+    font-size: 1.1rem;
+    color: #333;
+    margin: 0;
+}
+
+/* 主な機能セクション */
+#main-features {
+    background-color: #f9f9f9;
+    padding: 60px 0;
+}
+
+.features-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #172a88;
+}
+
+.features-subtitle {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* サブセクションカード */
+.subsection-title {
+    font-size: 1.75rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #172a88;
+}
+
+/* カードスタイル */
+.feature-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    height: 90%; /* カードの高さを100%に設定して統一 */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.feature-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.feature-card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.feature-card-text {
+    font-size: 1rem;
+    color: #555;
+}
+
+.management-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.management-list li {
+    font-size: 1rem;
+    color: #555;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+.process-step {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    height: 100%;
+}
+
+.process-step:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.process-icon {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: 0 auto;
+    font-size: 24px;
+}
+
+.process-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #172a88;
+    margin-top: 15px;
+}
+
+/* 保守運用体制セクションのスタイル */
+.support-card {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* カード内の要素を上下に均等に配置 */
+}
+
+.support-card-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #172a88;
+    margin-bottom: 10px;
+}
+
+.support-card-text {
+    font-size: 1rem;
+    color: #555;
+}
+
+.support-arrow {
+    font-size: 48px; /* 矢印アイコンを大きくする */
+    color: #df0522;
+    margin: 10px 0;
+}
+
+/* カード全体のフローのレイアウト調整 */
+#support-system .row {
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+}
+
+/* カードの高さを揃える */
+.support-card {
+    min-height: 300px; /* 必要に応じて高さを調整 */
+}
+
+/* 矢印の中央揃え */
+.d-flex.align-items-center {
+    height: 100%;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+#monetization {
+    background-color: white;
+    padding: 60px 0;
+}
+.monetization-card {
+    background-color: #f8f9fa;
+    border-radius: 50%; /* 完全に丸くするための設定 */
+    width: 200px; /* 幅を指定 */
+    height: 200px; /* 高さを指定 */
+    padding: 30px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.monetization-card:hover {
+    transform: scale(1.05); /* ホバー時の拡大アニメーション */
+}
+
+.monetization-icon {
+    font-size: 48px; /* アイコンを大きく表示 */
+    color: #df0522;
+    margin-bottom: 20px;
+}
+
+.monetization-card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #172a88;
+}
+
+.monetization-card-text {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* カードの配置を調整 */
+#monetization .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#monetization .col-md-4 {
+    display: flex;
+    justify-content: center;
+}
+
+/* お問い合わせセクションのスタイル */
+#contact {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+}
+
+.contact-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-card-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #172a88;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-card .form-label {
+    font-weight: bold;
+    color: #333;
+}
+
+.contact-card .form-control {
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.contact-card button[type="submit"] {
+    background-color: #df0522;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.contact-card button[type="submit"]:hover {
+    background-color: #c90420;
+}
+
+/* デモサイトセクションのスタイル */
+#demo-experience {
+    background-color: white;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #172a88;
+}
+
+.section-subtitle {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* デモステップのスタイル */
+.demo-steps {
+    text-align: center;
+}
+
+.step-card {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: box-shadow 0.3s ease;
+    height: 100%;
+}
+
+.step-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.step-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #df0522;
+    margin-bottom: 10px;
+}
+
+.step-text {
+    font-weight: bold;
+    color: #333;
+}
+
+/* デモサイト確認用動画のタイトル */
+.demo-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #172a88;
+}
+/* プライスセクションのスタイル */
+#pricing {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #172a88;
+}
+
+.section-subtitle {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* テーブルのスタイル */
+.table {
+    background-color: white;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table-bordered th,
+.table-bordered td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.table th {
+    background-color: #172a88;
+    color: white;
+}
+
+.table td {
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* お問い合わせボタン */
+.btn-primary {
+    background-color: #172a88;
+    border-color: #172a88;
+}
+
+.btn-primary:hover {
+    background-color: #c90420;
+    border-color: #c90420;
+}
+.faq-list {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-item p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.fw-bold {
+    font-weight: bold;
+    color: #172a88; /* タイトルの色 */
+}
+.faq-item .fw-bold {
+    font-size: 1.2rem; /* Qのフォントサイズを少し大きく */
+}
+
+.faq-item p:nth-child(2) {
+    color: #555;
+}
+
+/* アイコンのスペース調整 */
+.faq-item i {
+    margin-right: 8px;
+}
+.faq-item .bi-question-circle-fill {
+    color: #df0522;
+    margin-right: 8px; /* アイコンとテキストの間にスペースを作る */
+}
+
+.faq-item .bi-info-circle-fill {
+    color: #172a88;
+    margin-right: 8px; /* アイコンとテキストの間にスペースを作る */
+}
